@@ -1,0 +1,1 @@
+export const boyImg = require("./fontBoy.png");
