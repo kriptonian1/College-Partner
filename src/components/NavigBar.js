@@ -1,9 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const NavigBar = () => {
+/**
+ * 
+ * @param {bool} isBtn - if true, then the button will be styled as a button 
+ * @returns NavigBar component
+ */
+const NavigBar = ({isBtn}) => {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -12,15 +17,20 @@ const NavigBar = () => {
           CollegePartner
         </div>
         <div className="text-[#5B5B5B] flex space-x-8 items-center text-lg pr-10 ">
-          <div className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Home</div>
+          <div onClick={() => navigate('/')} className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Home</div>
           <div onClick={() => navigate("/landing")} className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Resources</div>
           <div className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Contact us</div>
-          <button onClick={() => navigate("/login")} className="py-[0.5rem] px-[2.5rem] hover:shadow-lg border-2 transition-all  hover:bg-[#5C7AFF] hover:text-white border-[#5C7AFF] rounded-[10px]">
-            Log In
-          </button>
-          <button className="py-[0.5rem] px-[2.5rem] border-[#5C7AFF] hover:border-[#5C7AFF] hover:shadow-lg transition-all hover:bg-white hover:text-[#5B5B5B] text-white border-2  bg-[#5C7AFF] rounded-[10px]">
-            Sign Up
-          </button>
+
+          {(isBtn === true) && <div className="space-x-8">
+            <button onClick={() => navigate("/login")} className="py-[0.5rem] px-[2.5rem] hover:shadow-lg border-2 transition-all  hover:bg-[#5C7AFF] hover:text-white border-[#5C7AFF] rounded-[10px]">
+              Log In
+            </button>
+            <button onClick={() => navigate('/signup')} className="py-[0.5rem] px-[2.5rem] border-[#5C7AFF] hover:border-[#5C7AFF] hover:shadow-lg transition-all hover:bg-white hover:text-[#5B5B5B] text-white border-2  bg-[#5C7AFF] rounded-[10px]">
+              Sign Up
+            </button>
+          </div>}
+
+
         </div>
       </div>
     </div>

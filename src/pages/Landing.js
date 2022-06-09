@@ -7,7 +7,7 @@ import SearchBar from '../components/SearchBar'
 const Landing = () => {
     return (
         <div className=''>
-            <NavigBar />
+            <NavigBar isBtn={true}/>
             <div className='justify-between pb-[4vh]  font-nunito pt-[4vh] xl:pt-[4vh] text-[3vw] text-[#4A8FE7] text-center'>
                 Search from thousands of resources
             </div>
