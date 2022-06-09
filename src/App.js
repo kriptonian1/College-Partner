@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
-import Landing from './pages/Landing';
+import Resources from './pages/Resources';
 import Login from './pages/Login';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login/>} />
-      <Route path="/landing" element={<Landing/>} />
+      <Route path="/resources" element={<Resources/>} />
     </Routes>
     </BrowserRouter>
   );
