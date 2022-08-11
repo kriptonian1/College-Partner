@@ -18,7 +18,7 @@ const NavigBar = ({isBtn}) => {
         </div>
         <div className="text-[#5B5B5B] flex space-x-8 items-center text-lg pr-10 ">
           <div onClick={() => navigate('/')} className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Home</div>
-          <div onClick={() => navigate("/landing")} className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Resources</div>
+          <div onClick={() => navigate("/resources")} className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Resources</div>
           <div className="cursor-pointer border-b border-b-white hover:border-b-black transition-all hover:text-black">Contact us</div>
 
           {(isBtn === true) && <div className="space-x-8">
