@@ -50,7 +50,7 @@ const Home = () => {
 
 
             <div className='mx-[45vw]'>
-                <button onClick={() => navigate("/landing")} className='py-[0.5rem] px-[5.5rem] border-2 hover:border-white hover:bg-[#5C7AFF] transition-all hover:text-white border-[#5C7AFF] rounded-[10px]'>
+                <button onClick={() => navigate("/resources")} className='py-[0.5rem] px-[5.5rem] border-2 hover:border-white hover:bg-[#5C7AFF] transition-all hover:text-white border-[#5C7AFF] rounded-[10px]'>
                     View Resources
                 </button>
             </div>
