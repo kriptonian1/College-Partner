@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <div>
-            <NavigBar />
+            <NavigBar  isBtn={true}/>
             <div className='justify-between pb-[4rem]  font-nunito xl:pt-[9vw]  font-black text-[3vw] text-[#5C7AFF] text-center'>
                 Find and organize your notes in more efficient way
             </div>
